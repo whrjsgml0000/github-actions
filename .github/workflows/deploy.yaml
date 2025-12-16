@@ -6,18 +6,8 @@ on:
       - main
 
 jobs:
-  My-Deploy-Job:
+  Deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Hello World
-        run: |
-          echo "Hello World"
-          echo "Good"
-      - name: Github Actions 자체에 내장된 함수
-        run: |
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-      - name: Github Secrets
-        run: |
-          echo ${{ secrets.MY_NAME }}
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
