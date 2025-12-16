@@ -21,6 +21,6 @@ test {
 jar {
     manifest {
         attributes 'Manifest-Version': '1.0',
-                'Main-Class': 'com.example.MyMainClass'
+                'Main-Class': 'Main'
     }
 }
